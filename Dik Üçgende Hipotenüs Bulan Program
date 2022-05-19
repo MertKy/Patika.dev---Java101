@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        double k1,k2,hip;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Birinci Kenar: ");
+        k1 = input.nextDouble();
+        System.out.print("İkinci Kenar: ");
+        k2 = input.nextDouble();
+        hip = (k1*k1 + k2*k2);
+        hip = Math.sqrt(hip);
+        System.out.println("Hipotenüs: "+hip);
+        double u,S;
+        u = (k1+k2+hip)/2;
+        S = u*(u-k1)*(u-k2)*(u-hip);
+        S = Math.sqrt(S);
+        System.out.println("Alan: "+S);
+        
+    }
+}
