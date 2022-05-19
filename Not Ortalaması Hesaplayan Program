@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        int mat,fizik,kimya,turk,tarih,muzik,total;
+        Scanner inp = new Scanner(System.in);
+        
+        System.out.print("Matematik: ");
+        mat = inp.nextInt();
+        
+        System.out.print("Fizik: ");
+        fizik = inp.nextInt();
+        
+        System.out.print("Kimya: ");
+        kimya = inp.nextInt();
+        
+        System.out.print("Türkçe: ");
+        turk = inp.nextInt();
+        
+        System.out.print("Tarih: ");
+        tarih = inp.nextInt();
+        
+        System.out.print("Müzik: ");
+        muzik = inp.nextInt();
+    
+        double avr;
+        total = (mat+fizik+kimya+turk+tarih+muzik);
+        avr = total/6.0;
+        System.out.println("Ortalamanız: " + avr);
+    }
+}
