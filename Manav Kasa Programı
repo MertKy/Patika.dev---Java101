@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class manav {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        double armut=2.14, elma=3.67, domates=1.11, muz=0.95, patlican=5.00;
+        System.out.println("Sirasiyla armut, elma, domates, muz, patlican: ");
+        double armutKg,elmaKg,domatesKg,muzKg,patlicanKg;
+        armutKg = inp.nextDouble();
+        elmaKg = inp.nextDouble();
+        domatesKg = inp.nextDouble();
+        muzKg = inp.nextDouble();
+        patlicanKg = inp.nextDouble();
+        double total = (patlican*patlicanKg)+(muz*muzKg);
+        total += (domates*domatesKg)+(elma*elmaKg)+(armut*armutKg);
+        System.out.println("Total: "+ total);
+    }
+}
