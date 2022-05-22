@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class vki {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Boyunuz: ");
+        double boy;
+        boy = inp.nextDouble();
+        System.out.println("Kilonuz: ");
+        int kilo;
+        kilo = inp.nextInt();
+        System.out.println("Vucut Kitle Indeksiniz: " +  kilo/(boy*boy));
+    }
+}
