@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class daire {
+    public static void main(String[] args) {
+        int r;
+        double pi = 3.14;
+        Scanner inp = new Scanner(System.in);
+        System.out.println("r giriniz: ");
+        r = inp.nextInt();
+        double alan = r*r*pi;
+        double cevre = 2*r*pi;
+        System.out.println("Alan: "+alan);
+        System.out.println("Cevre: "+cevre);
+    }
+}
